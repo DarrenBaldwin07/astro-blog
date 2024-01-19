@@ -1,5 +1,6 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 ---
 
@@ -9,8 +10,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
+		<Header />
 		<main>
-			<h1>Hello from blog template</h1>
+			<h1 class='text-red-500 text-center'>Hello from blog template (this would be your landing page)</h1>
 		</main>
 	</body>
 </html>
