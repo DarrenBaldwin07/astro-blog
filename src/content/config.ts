@@ -9,7 +9,9 @@ const blog = defineCollection({
     updatedDate: z.coerce.date().optional(),
     heroImage: z.string().optional(),
     tags: z.array(z.string()),
-    author: z.string().default("Ry"),
+    author: z
+      .enum(["Ry Walker", "Darren Baldwin", "Steven Miller"])
+      .default("Ry Walker"),
   }),
 })
 
